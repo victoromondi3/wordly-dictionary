@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="search English words, explore definitions, and save your favorites with wordly.">
+        <title>Wordly | Dictionary</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <header class="topbar">
+            <a href="#" class="logo" aria-label="Wordly home">Wordly<span></span></a>
+            <button id="theme-toggle" type="button" aria-label="Switch to dark theme">
+                Dark mode
+            </button>
+        </header>
+
+        <main class="container">
+            <section class="hero">
+                <p class="eyebrow">YOUR PERSONAL Dictionary</p>
+                <h1>Discover the power of <span>words.</span></h1>
+                <p class="subtitle">Find meanings, hear pronounciation, and grow your vocabulary</p>
+
+
+                <form id="search-form">
+                    <label for="word-input">search for a word</label>
+
+
+                    <div class="search-box">
+                        <input
+                            type="text"
+                            id="word-input"
+                            placeholder="Enter a word..."
+                            required
+                            >
+                            <button type="submit" id="search-button">Search</button>
+                            </div>
+                </form>
+
+                <!-- Keep your other existing page content here -->
+
+                <p id="status-message"></p>
+                
+            </section>
+<div class="content-grid">
+    <section id="results-section" aria-label="Dictionary results">
+        <div id="results">
+            <div class="welcome-card">
+                <span class="welcome-icon" aria-hidden="true"></span>
+                <h2>Your next word awaits</h2>
+                <p>
+                    Enter a word above to discover its meaning,
+                    pronunciation, and synonyms.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <aside class="favorites-panel">
+        <div class="section-heading">
+            <p class="eyebrow">Your collection</p>
+            <h2>Saved words</h2>
+        </div>
+
+        <p class="favorites-description">
+            Keep useful words close at hand.
+        </p>
+
+        <ul id="favorites-list" aria-label="Saved favorite words"></ul>
+    </aside>
+</div>
+        </main>
+
+        <footer>
+            <p>Made with curiosity by wordly. Definitions powered by free dictionary API</p>
+        </footer>
+       
+    </body>
+</html>
